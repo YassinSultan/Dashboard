@@ -24,6 +24,7 @@
 }
 .card:nth-child(1) .card-body {
   flex-direction: row;
+  height: fit-content;
 }
 .card:nth-child(1) .card-body .info {
   display: flex;
