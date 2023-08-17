@@ -1,0 +1,85 @@
+.card {
+  padding: 20px;
+}
+.card .card-header,
+.card .card-body,
+.card .card-footer {
+  padding: 0px;
+}
+
+.card .card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.card .card-header .type {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.card .card-header .cost {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.card .card-header .cost sup {
+  font-size: 1.5rem;
+}
+.card .card-header {
+  border: 8px solid var(--black);
+  outline: 3px solid var(--Vivid-Vermilion);
+  background-color: var(--Vivid-Vermilion);
+}
+/* start Card Body */
+.card .card-body {
+  border: none;
+}
+.card .card-body ul {
+  width: 100%;
+}
+.card .card-body ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-block: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.card .card-body ul li .fa-check {
+  color: var(--Light-Malachite-Green);
+}
+.card .card-body ul li .fa-xmark {
+  color: red;
+}
+.card .card-body ul li .help {
+  margin-left: auto;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.card .card-footer {
+  padding-top: 20px;
+  justify-content: start;
+}
+/* ------- Colors */
+.card:nth-child(1) .card-header {
+  outline: 3px solid var(--Vivid-Vermilion);
+  background-color: var(--Vivid-Vermilion);
+}
+.card:nth-child(1) .button {
+  background-color: var(--Vivid-Vermilion);
+}
+.card:nth-child(2) .card-header {
+  outline: 3px solid var(--Crayola);
+  background-color: var(--Crayola);
+}
+.card:nth-child(2) .button {
+  background-color: var(--Crayola);
+}
+.card:nth-child(3) .card-header {
+  outline: 3px solid var(--Baby-Blue-Eyes);
+  background-color: var(--Baby-Blue-Eyes);
+}
+.card:nth-child(3) .button {
+  background-color: var(--Baby-Blue-Eyes);
+}

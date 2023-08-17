@@ -1,0 +1,94 @@
+.cards-container {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.card-header {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  position: relative;
+  padding-top: 40px;
+}
+.card-header img {
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid white;
+}
+.card-header .contact {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  display: flex;
+  gap: 5px;
+}
+.card-header .name {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.card-header .job {
+  opacity: 0.5;
+}
+.card-header .contact a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.card-header .contact a:hover {
+  background-color: var(--Vivid-Vermilion);
+}
+.card-body {
+  position: relative;
+}
+.card-body .box {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+.card-body .VIP {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  font-size: 5rem;
+  letter-spacing: -3px;
+  font-weight: 900;
+  color: var(--Vivid-Vermilion);
+  opacity: 0.1;
+}
+.card-footer {
+  justify-content: space-between;
+  align-items: center;
+}
+.card-footer .action {
+  display: flex;
+  gap: 10px;
+}
+.card-footer .action .button:last-child {
+  background-color: red;
+}
+.card-footer .date {
+  opacity: 0.5;
+}

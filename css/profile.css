@@ -1,0 +1,177 @@
+.cards-container {
+  grid-template-columns: 1fr 2fr;
+}
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* ---------------------- */
+/* Start Card 1 */
+.card:nth-child(1) {
+  flex-direction: row;
+  grid-column: 1 / -1;
+}
+.card:nth-child(1) .card-header {
+  justify-content: center;
+  align-items: center;
+}
+.card:nth-child(1) .card-header .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-height: fit-content;
+}
+.card:nth-child(1) .card-header .info .image {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+  width: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card:nth-child(1) .card-header .image img {
+  width: 100%;
+}
+.card:nth-child(1) .card-header .user-name {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.card:nth-child(1) .card-header .level {
+  font-size: 1rem;
+  opacity: 0.5;
+}
+.card:nth-child(1) .card-header .progress {
+  position: relative;
+  width: 70%;
+  height: 5px;
+  background-color: var(--black);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.card:nth-child(1) .card-header .progress:after {
+  position: absolute;
+  left: 0px;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background-color: var(--Vivid-Vermilion);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.card:nth-child(1) .card-header .stars {
+  color: var(--Crayola);
+  font-size: 1.3rem;
+}
+.card:nth-child(1) .card-header .rating {
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+
+.card:nth-child(1) .card-body {
+  border: none;
+  border-left: 3px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  padding: 0px;
+  gap: 0px;
+}
+.card:nth-child(1) .card-body .box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  align-items: center;
+  padding: 20px;
+}
+.card:nth-child(1) .card-body .box:hover {
+  background-color: rgba(128, 128, 128, 0.336);
+}
+.card:nth-child(1) .card-body .box .title {
+  grid-column: 1/-1;
+  opacity: 0.5;
+  font-size: 1rem;
+}
+.card:nth-child(1) .card-body .box .info span:first-child {
+  opacity: 0.5;
+  font-size: 1rem;
+}
+.card:nth-child(1) .toggle label {
+  width: 5rem;
+  height: 20px;
+}
+.card:nth-child(1) .toggle label::before {
+  height: 20px;
+  width: 20px;
+}
+/* End Card 1 */
+/* ------------------------------------- */
+/* Start Card 2 */
+.card:nth-child(2) .card-body {
+  padding-block: 0px;
+  gap: 0px;
+}
+.card:nth-child(2) .card-body .box {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  padding-block: 15px;
+}
+.card:nth-child(2) .card-body .box:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.card:nth-child(2) .card-body .box p {
+  padding: 5px;
+  background-color: var(--light-black);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/* End Card 2 */
+/* ------------------------------------- */
+/* Start Card 3 */
+.card:nth-child(3) .card-body {
+  padding-block: 0px;
+  gap: 0px;
+}
+.card:nth-child(3) .card-body .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: 10px;
+}
+.card:nth-child(3) .card-body .box.box:not(:last-of-type) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.card:nth-child(3) .card-body .box .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card:nth-child(3) .card-body .box .info .image {
+  width: 80px;
+  overflow: hidden;
+}
+.card:nth-child(3) .card-body .box .info .image img {
+  width: 100%;
+}
+.card:nth-child(3) .card-body .box .date {
+  text-align: end;
+}
+.card:nth-child(3) .card-body .box .date .day {
+  opacity: 0.5;
+}
